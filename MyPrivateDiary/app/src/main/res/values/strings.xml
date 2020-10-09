@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Private Diary</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="down">Down</string>
+    <string name="up">up</string>
+    <string name="_12_09_20">12.09.20</string>
+    <string name="log_in">Log in</string>
+    <string name="enter">Enter</string>
+</resources>
