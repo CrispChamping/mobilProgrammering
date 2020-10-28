@@ -1,5 +1,6 @@
 package chrismly.hiof.no;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,12 +18,22 @@ public class log_in extends AppCompatActivity {
         //Add the button behavior
         final Button checkPassword = findViewById(R.id.checkPassword);
         final TextView welcomeUser = findViewById(R.id.welcomeUser);
-        final EditText passwordInput = findViewById(R.id.passwordInput);
 
         checkPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.main_page);
+                final EditText passwordInput = findViewById(R.id.passwordInput);
+                final String password = passwordInput.getText().toString();
+                if(password.equals("password")) {
+                    setContentView(R.layout.main_page);
+                }
+                /*else{
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("Wrong password");
+                    builder.setMessage("Please try again");
+                    builder.setPositiveButton("ok", null);
+                    AlertDialog dialog = builder.show();
+                }*/
             }
         });
 
