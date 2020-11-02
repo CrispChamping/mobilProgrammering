@@ -85,5 +85,14 @@ public class log_in extends AppCompatActivity {
             }
         });
 
+        //development help
+        final Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.main_page);
+            }
+        });
+
     }
 }
