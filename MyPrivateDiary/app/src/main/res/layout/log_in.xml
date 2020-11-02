@@ -9,30 +9,61 @@
 
     <TextView
         android:id="@+id/welcomeUser"
-        android:layout_width="254dp"
-        android:layout_height="55dp"
-        android:text="@string/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:text="@string/welcome"
         android:textColor="@android:color/black"
         android:textSize="36sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.214"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/checkPassword"
-        android:layout_width="79dp"
-        android:layout_height="62dp"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
         android:background="#C5E1A5"
-        android:text="@string/log_in"
+        android:text="@string/login"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.627"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/createUser"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        android:background="#C5E1A5"
+        android:text="@string/login"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/gobackBtn"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:background="#94AF76"
+        android:text="Go back"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/passwordInput"
@@ -42,11 +73,60 @@
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkPassword"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintVertical_bias="0.479"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="233dp"
+        android:layout_height="61dp"
+        android:background="#E6CEFF"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|text"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="147dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:background="#C5E1A5"
+        android:text="@string/login"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="225dp"
+        android:background="#C5E1A5"
+        android:text="@string/create_user"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,8 @@
     <string name="_12_09_20">12.09.20</string>
     <string name="log_in">Log in</string>
     <string name="enter">Enter</string>
+    <string name="login">Login</string>
+    <string name="create_user">Create user</string>
+    <string name="create">Create</string>
+    <string name="welcome">Welcome</string>
 </resources>
